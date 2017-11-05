@@ -1,0 +1,21 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle Toc Viewer",
+        "command": "toc-viewer:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Toc Viewer",
+          "command": "toc-viewer:toggle"
+        }
+      ]
+    }
+  ]
+}

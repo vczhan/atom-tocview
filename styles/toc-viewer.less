@@ -1,0 +1,74 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.toc-viewer {
+  width: 140px;
+  height: 100%;
+}
+
+.toc-view-contain {
+  display: flex;
+}
+
+.toc-viewer-head {
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  border-bottom: 1px solid #181920;
+}
+
+.toc-viewer-body {
+  flex: 1;
+  height: 0;
+  overflow-y: scroll;
+}
+
+.toc-type {
+  padding: 3px 10px;
+  color: #6e7184;
+  font-size: 14px;
+}
+
+.toc-viewer-item {
+  display: flex;
+  font-size: 13px;
+
+  &:hover {
+    background: #353848;
+  }
+
+  .row {
+    position: relative;
+    top: 1px;
+    width: 32px;
+    padding-right: 3px;
+    font-size: 11px;
+    font-style: normal;
+    color: #a5a5a6;
+    text-align: right;
+  }
+
+  .text {
+    flex: 1;
+    width: 0;
+    color: #6171a6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .btn-remove {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ac4142;
+    }
+  }
+}
